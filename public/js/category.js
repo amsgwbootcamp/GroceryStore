@@ -4,7 +4,7 @@ $(document).ready(function() {
     window.history.back();
   });
 
-  $('div.col-6.item').on('click', function() {
+  $('div.col.item').on('click', function() {
     // eslint-disable-next-line no-invalid-this
     const food = $(this).text();
     $('.content').empty();
