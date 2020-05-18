@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: goldenrod;
+  color: darkslategray;
   font-weight: strong;
 }
 
@@ -38,4 +38,32 @@ a {
 h2 {
   color: goldenrod;
   font-weight: bolder;
+}
+
+#catlogoutBttn {
+  text-align: right;
+  margin-right: 2.5%;
+  margin-top: 1.5%;
+}
+
+#productDiv {
+  display: block;
+}
+
+#prevBttn {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+#prodlogoutBttn {
+  float: right;
+  margin-right: 2.5%;
+  margin-top: 1%;
+  clear: both;
+}
+
+
+
+button {
+  border-radius: 5px;
 }
