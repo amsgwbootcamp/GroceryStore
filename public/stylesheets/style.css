@@ -23,8 +23,7 @@ body {
 }
 
 a {
-  font-size: 15px;
-  color: darkslategray;
+  color: goldenrod;
   font-weight: strong;
 }
 
@@ -34,4 +33,9 @@ a {
   color: darkslategray;  
   font-weight: strong;
   background: white;  
+}
+
+h2 {
+  color: goldenrod;
+  font-weight: bolder;
 }
