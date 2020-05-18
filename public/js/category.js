@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-invalid-this
 $(document).ready(function() {
   $('.goback').on('click', function() {
-    window.history.back();
+    window.location.replace('/category');
   });
 
-  $('div.col.item').on('click', function() {
+  $('div.col-6.item').on('click', function() {
     // eslint-disable-next-line no-invalid-this
     const food = $(this).text();
     $('.content').empty();

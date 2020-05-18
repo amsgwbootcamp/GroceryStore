@@ -47,7 +47,7 @@ $(document).ready(function() {
  * @param {object} err The error object.
  */
   function handleLoginErr(err) {
-    $('#alert .msg').text(err.responseJSON);
+    $('#alert .msg').text('An error has occurred.  Please contact support.');
     $('#alert').fadeIn(500);
   }
 });

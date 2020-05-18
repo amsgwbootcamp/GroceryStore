@@ -41,7 +41,13 @@ $(document).ready(function() {
         // If there's an error, log the error
         })
         .catch(function(err) {
-          console.log(err);
+          console.log(handleLoginErr);
         });
+  }
+
+  // eslint-disable-next-line require-jsdoc
+  function handleLoginErr(err) {
+    $('#alert .msg').text('An error has occurred.  Please contact support.');
+    $('#alert').fadeIn(500);
   }
 });

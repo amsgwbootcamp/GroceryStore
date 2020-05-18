@@ -28,12 +28,16 @@ a {
 }
 
 .products {
-  margin-left: 25%;
-  margin-right: 25%;
   color: darkslategray;  
   font-weight: strong;
-  background: white;  
+  background: white;   
+  width: 25%;
 }
+
+.price {
+  text-align: right;
+}
+
 
 h2 {
   color: goldenrod;
@@ -61,8 +65,6 @@ h2 {
   margin-top: 1%;
   clear: both;
 }
-
-
 
 button {
   border-radius: 5px;
