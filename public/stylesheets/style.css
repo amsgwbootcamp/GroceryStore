@@ -5,6 +5,11 @@ form.login {
   font-weight: bold;
 }
 
+a {
+  color: darkslategray;
+  font-weight: strong;
+}
+
 body {
   background-image: url('/img/grocerystore.jpg');
   background-repeat: no-repeat;
@@ -12,8 +17,13 @@ body {
   background-size: cover;
 }
 
-.mTitle, h1, h4 {
-  text-align: center;
+button {
+  border-radius: 5px;
+}
+
+h2 {
+  color: goldenrod;
+  font-weight: bolder;
 }
 
 .clearfix::after {
@@ -22,9 +32,12 @@ body {
   display: table;
 }
 
-a {
-  color: darkslategray;
-  font-weight: strong;
+.mTitle, h1, h4 {
+  text-align: center;
+}
+
+.price {
+  text-align: right;
 }
 
 .products {
@@ -34,24 +47,10 @@ a {
   width: 25%;
 }
 
-.price {
-  text-align: right;
-}
-
-
-h2 {
-  color: goldenrod;
-  font-weight: bolder;
-}
-
 #catlogoutBttn {
   text-align: right;
   margin-right: 2.5%;
   margin-top: 1.5%;
-}
-
-#productDiv {
-  display: block;
 }
 
 #prevBttn {
@@ -66,6 +65,6 @@ h2 {
   clear: both;
 }
 
-button {
-  border-radius: 5px;
+#productDiv {
+  display: block;
 }

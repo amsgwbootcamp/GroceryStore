@@ -14,6 +14,19 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, '../public/signup.html'));
   });
 
+  app.get('/category', function(req, res) {
+    db.product_category.findAll().then((allCat) => {
+      const all = allCat.map((cat) => {
+        return {
+          id: cat.id,
+          category: cat.category,
+        };
+      });
+      res.render('category', {all});
+    })
+        .catch((err)=>console.log(err));
+  });
+
   app.get('/login', function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -27,25 +40,6 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, '/public/stylesheets/style.css'));
   });
 
-  // This will allow the script to be used on the web pages
-  // to be loaded into the browser:
-  app.get('/product/js/category.js', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/js/category.js'));
-  });
-
-  app.get('/category', function(req, res) {
-    db.product_category.findAll().then((allCat) => {
-      const all = allCat.map((cat) => {
-        return {
-          id: cat.id,
-          category: cat.category,
-        };
-      });
-
-      res.render('category', {all});
-    })
-        .catch((err)=>console.log(err));
-  });
   app.get('/product/:id', function(req, res, next) {
     db.product.findAll({
       where: {

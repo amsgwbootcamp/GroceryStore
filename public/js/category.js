@@ -16,7 +16,6 @@ $(document).ready(function() {
     $('.foodModal').modal({closable: false,
       allowMultiple: true,
     }).modal('hide');
-
     // const a = localStorage.getItem(counter.toString());
     // const b = a.split(',');
     // alert(b[0]+'\n'+b[1]+'\n'+b[2]+'\n'+b[3]);
@@ -24,7 +23,6 @@ $(document).ready(function() {
     alert('Item added to cart');
   });
 });
-
 
 // eslint-disable-next-line require-jsdoc
 function getNutrition(fdDiv, food) {
